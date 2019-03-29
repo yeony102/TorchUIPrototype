@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col {
+    margin-left: 50px;
+    padding-top: 50px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button {
+    margin-top: 50px;
+    width: fit-content;
+}
+
+.button.filled {
+    height: 36px;
+    background-color: #7D4BFB;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+/* .button.filled:hover {
+    box-shadow: 0 4px 16px 0 rgba(125,75,251,0.40);
+    cursor: pointer;
+} */
+
+.button.outlined {
+    background-color: transparent;
+    height: 34px;
+    border: 2px solid #7D4BFB;
+    border-radius: 2px;
+}
+
+.button.text {
+    height: 36px;
+    border: none;
+    background-color: transparent;
+
+    /* for debugging */
+    /* background-color: yellow; */
+}
+
+.label {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.filled .label {
+    line-height: 36px;  
+    color: white;
+}
+
+.outlined .label {
+    line-height: 34px;
+    color: #7D4BFB;
+}
+
+.text .label {
+    line-height: 36px;
+    color: #7D4BFB;
+}
+
+.filled.text-only .label, .text.text-only .label{
+    margin: 0px 16px 0px 16px;
+}
+
+.outlined.text-only .label {
+    margin: 0px 14px 0px 14px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* when the icon size is smaller than 24px, 
+  the inline svg isn't middle alinged in the viewbox 
+  and therefore, an extra top padding is needed. 
+  There could be a better solution though.
+*/
+.icontext .icon, .texticon .icon {
+    margin-top: 4px;
+}
+
+.filled.icontext .icon, .text.icontext .icon {
+    margin-left: 16px;
+}
+
+.outlined.icontext .icon {
+    margin-left: 14px;
+}
+
+.filled.icontext .label, .text.icontext .label {
+    margin: 0px 16px 0px 4px;
+}
+
+.outlined.icontext .label {
+    margin: 0px 14px 0px 4px;
+}
+
+.filled.texticon .icon, .text.texticon .icon {
+    margin-right: 16px;
+}
+
+.outlined.texticon .icon {
+    margin-right: 14px;
+}
+
+.filled.texticon .label, .text.texticon .label {
+    margin: 0px 4px 0px 16px;
+}
+
+.outlined.texticon .label {
+    margin: 0px 4px 0px 14px;
+}
+
+.filled.icon-only .icon, .text.icon-only .icon {
+    margin: 6px;
+}
+
+.outlined.icon-only .icon {
+    margin: 5px;
+}
