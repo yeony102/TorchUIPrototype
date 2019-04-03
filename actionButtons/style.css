@@ -17,10 +17,11 @@
 .button {
     margin-top: 50px;
     width: fit-content;
+    height: 36px;
+    box-sizing: border-box;
 }
 
 .button.filled {
-    height: 36px;
     background-color: #7D4BFB;
     border: none;
     border-radius: 2px;
@@ -34,18 +35,13 @@
 
 .button.outlined {
     background-color: transparent;
-    height: 34px;
     border: 2px solid #7D4BFB;
     border-radius: 2px;
 }
 
 .button.text {
-    height: 36px;
     border: none;
     background-color: transparent;
-
-    /* for debugging */
-    /* background-color: yellow; */
 }
 
 .label {
@@ -56,26 +52,26 @@
 }
 
 .filled .label {
-    line-height: 36px;  
+    line-height: 36px;
     color: white;
 }
 
 .outlined .label {
-    line-height: 34px;
+    line-height: 32px;
     color: #7D4BFB;
 }
 
 .text .label {
-    line-height: 36px;
     color: #7D4BFB;
+    line-height: 36px;
 }
 
-.filled.text-only .label, .text.text-only .label{
+.filled.text-only .label, .text.text-only .label {
     margin: 0px 16px 0px 16px;
 }
 
 .outlined.text-only .label {
-    margin: 0px 14px 0px 14px;
+    margin: 0px 14px 0px 14px
 }
 
 .icon {
@@ -88,11 +84,12 @@
   and therefore, an extra top padding is needed. 
   There could be a better solution though.
 */
+
 .icontext .icon, .texticon .icon {
     margin-top: 4px;
 }
 
-.filled.icontext .icon, .text.icontext .icon {
+.icontext .icon {
     margin-left: 16px;
 }
 
@@ -100,15 +97,11 @@
     margin-left: 14px;
 }
 
-.filled.icontext .label, .text.icontext .label {
+.icontext .label {
     margin: 0px 16px 0px 4px;
 }
 
-.outlined.icontext .label {
-    margin: 0px 14px 0px 4px;
-}
-
-.filled.texticon .icon, .text.texticon .icon {
+.texticon .icon {
     margin-right: 16px;
 }
 
@@ -116,7 +109,7 @@
     margin-right: 14px;
 }
 
-.filled.texticon .label, .text.texticon .label {
+.texticon .label {
     margin: 0px 4px 0px 16px;
 }
 
@@ -124,10 +117,10 @@
     margin: 0px 4px 0px 14px;
 }
 
-.filled.icon-only .icon, .text.icon-only .icon {
+.icon-only .icon {
     margin: 6px;
 }
 
 .outlined.icon-only .icon {
-    margin: 5px;
+   margin: 4px;
 }

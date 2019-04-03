@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col {
+    margin-left: 50px;
+    padding-top: 50px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* common */
+.tgl-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+
+    cursor: pointer;
+}
+
+.tgl-btn:first-child {
+    margin-right: 10px;
+}
+
+.label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* strengthening style */
+
+/* common */
+.tgl-btn.strengthen.off {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+
+.tgl-btn.strengthen.on {
+    background: #E9E0FE;
+    border: 2px solid #7E4AFA;
+    border-radius: 2px;
+}
+
+.tgl-btn.strengthen.off .label {
+    font-weight: 400;
+}
+
+.tgl-btn.strengthen.on .label {
+    color: #5919F9;
+    font-weight: 600;
+}
+
+/* text only */
+.tgl-btn.strengthen.text-only {
+    width: 40px;
+    height: 28px;
+}
+
+.tgl-btn.strengthen.text-only .label {
+    width: 100%;
+    font-size: 12px;
+}
+
+.tgl-btn.strengthen.text-only.off .label {
+    line-height: 26px;
+}
+
+.tgl-btn.strengthen.text-only.on .label {
+    line-height: 24px;
+}
+
+/* icon only */
+.tgl-btn.strengthen.icon-only {
+    width: 32px;
+    height: 32px;
+}
+
+.tgl-btn.strengthen.icon-only .icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.tgl-btn.strengthen.icon-only.off  .icon {
+    margin-top: 3px;
+}
+
+.tgl-btn.strengthen.icon-only.on  .icon {
+    margin-top: 2px;
+}
+
+
+/* icon + text */
+
+.tgl-btn.strengthen.icontext {
+    width: 104px;
+    height: 40px;
+    position: relative;
+}
+
+.tgl-btn.strengthen .label-container {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.tgl-btn.strengthen.icontext .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.tgl-btn.strengthen.icontext.off .icon {
+    margin-top: 8px;
+}
+
+.tgl-btn.strengthen.icontext.on .icon {
+    margin-top: 7px;
+}
+
+.tgl-btn.strengthen.icontext .label {
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.tgl-btn.strengthen.icontext.off .label {
+    line-height: 38px;
+}
+
+.tgl-btn.strengthen.icontext.on .label {
+    line-height: 36px;
+}
+
+/* image text */
+.tgl-btn.strengthen.imagetext {
+    width: 136px;
+    height: 114px;
+    position: relative;
+}
+
+.tgl-btn.strengthen.imagetext .image {
+    width: 56px;
+    height: 56px;
+    margin: auto;
+    border-radius: 56px;
+    background-image: url("trip.png");
+    background-size: cover;
+}
+
+.tgl-btn.strengthen.imagetext .label {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.tabletest {
+    display: table;
+}
+
+.tabletest .table-label {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
