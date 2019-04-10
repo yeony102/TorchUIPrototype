@@ -23,6 +23,7 @@
 /* common */
 .tgl-btn {
     display: inline-block;
+    position: relative;
     box-sizing: border-box;
     vertical-align: middle;
 
@@ -33,8 +34,17 @@
     margin-right: 10px;
 }
 
+.container {
+    width: fit-content;
+    height: fit-content;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .label {
-    display: inline-block;
     text-align: center;
     vertical-align: middle;
 }
@@ -75,14 +85,6 @@
     font-size: 12px;
 }
 
-.tgl-btn.strengthen.text-only.off .label {
-    line-height: 26px;
-}
-
-.tgl-btn.strengthen.text-only.on .label {
-    line-height: 24px;
-}
-
 /* icon only */
 .tgl-btn.strengthen.icon-only {
     width: 32px;
@@ -93,15 +95,6 @@
     display: block;
     width: 24px;
     height: 24px;
-    margin: auto;
-}
-
-.tgl-btn.strengthen.icon-only.off  .icon {
-    margin-top: 3px;
-}
-
-.tgl-btn.strengthen.icon-only.on  .icon {
-    margin-top: 2px;
 }
 
 
@@ -110,18 +103,6 @@
 .tgl-btn.strengthen.icontext {
     width: 104px;
     height: 40px;
-    position: relative;
-}
-
-.tgl-btn.strengthen .label-container {
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
 }
 
 .tgl-btn.strengthen.icontext .icon {
@@ -131,39 +112,23 @@
     vertical-align: top;
 }
 
-.tgl-btn.strengthen.icontext.off .icon {
-    margin-top: 8px;
-}
-
-.tgl-btn.strengthen.icontext.on .icon {
-    margin-top: 7px;
-}
-
 .tgl-btn.strengthen.icontext .label {
+    display: inline-block;
     font-size: 16px;
-    margin-left: 2px;
-}
-
-.tgl-btn.strengthen.icontext.off .label {
-    line-height: 38px;
-}
-
-.tgl-btn.strengthen.icontext.on .label {
-    line-height: 36px;
+    margin-left: 4px;
 }
 
 /* image text */
 .tgl-btn.strengthen.imagetext {
     width: 136px;
     height: 114px;
-    position: relative;
 }
 
 .tgl-btn.strengthen.imagetext .image {
     width: 56px;
     height: 56px;
     margin: auto;
-    border-radius: 56px;
+    border-radius: 50%;
     background-image: url("trip.png");
     background-size: cover;
 }
@@ -171,14 +136,4 @@
 .tgl-btn.strengthen.imagetext .label {
     font-size: 14px;
     margin-top: 8px;
-}
-
-.tabletest {
-    display: table;
-}
-
-.tabletest .table-label {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
 }
